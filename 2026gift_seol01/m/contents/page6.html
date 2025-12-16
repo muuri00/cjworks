@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CJ 제일제당 - 2025 The Gift Collection</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"
+    />
+
+    <!-- CSS -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.list.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.transitions.min.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* 선택: 전환 효과 */
+      body[class^="cate"] .wrap .contents { transition: background-color .2s ease; }
+
+      /* cate6 배경색 */
+      .cate6 .wrap .contents.page,
+      .cate6 .wrap .contents { background-color:#601115; }
+    </style>
+  </head>
+
+  <!-- ✅ 카테고리 클래스 추가 -->
+  <body class="cate6">
+    <div class="wrap">
+      <div class="gnb"></div>
+      <div class="head"></div>
+
+      <!-- 모바일 안내 레이어(기본 숨김) -->
+      <div class="mobile" style="display:none">
+        <a href="#;" onclick="closeWin();"><img src="../img/mobile.png" alt="" /></a>
+        <a href="#;" onclick="closeWin();" class="close-mobile">X</a>
+      </div>
+
+      <div class="contents page bt06">
+        <div id="mainslide" class="list goods">
+          <!-- 1~2 -->
+          <div>
+            <div class="tc mar_b6">
+              <a href="../detail/cate6/1.html" class="w80">
+                <img src="../img/goods/thumb/cate6/6-1.png" alt="상품 6-1" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate6/2.html" class="w80">
+                <img src="../img/goods/thumb/cate6/6-2.png" alt="상품 6-2" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 3~5 : 위 1개 + 아래 2개 -->
+          <div>
+            <div class="tc mar_b6">
+              <a href="../detail/cate6/3.html" class="w80">
+                <img src="../img/goods/thumb/cate6/6-3.png" alt="상품 6-3" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate6/4.html" class="w43 mar_r2">
+                <img src="../img/goods/thumb/cate6/6-4.png" alt="상품 6-4" />
+              </a>
+              <a href="../detail/cate6/5.html" class="w43">
+                <img src="../img/goods/thumb/cate6/6-5.png" alt="상품 6-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+
+    <!-- 스크립트: jQuery -> Owl -> 프로젝트 JS -> init -->
+    <script src="../js/jquery/jquery-1.11.0.min.js"></script>
+    <script src="../css/owl-carousel/owl.carousel.js"></script>
+    <script src="../js/cjmobile.js"></script>
+
+    <script>
+      // 헤더/GNB/푸터 로드 및 슬라이드 초기화
+      (function () {
+        try {
+          new mobile({
+            header: '../inc/header.html',
+            gnb: '../inc/gnb.html',
+            product: '../inc/product.html',
+            footer: '../inc/footer.html'
+          }).module.view.init();
+        } catch (e) {
+          console.error('page6 init failed:', e);
+        }
+      })();
+
+      // 레이어 팝업(모바일 안내) 쿠키 처리
+      (function () {
+        function setCookie(name, value, days) {
+          var d = new Date();
+          d.setDate(d.getDate() + days);
+          document.cookie = name + '=' + encodeURIComponent(value) + '; path=/; expires=' + d.toUTCString() + ';';
+        }
+        window.closeWin = function () {
+          setCookie('layerPop', 'done', 1);
+          $('.mobile').hide();
+        };
+        $(function () {
+          var cookiedata = document.cookie || '';
+          if (cookiedata.indexOf('layerPop=done') < 0) $('.mobile').show();
+          else $('.mobile').hide();
+        });
+      })();
+    </script>
+  </body>
+</html>

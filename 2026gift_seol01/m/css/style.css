@@ -1,0 +1,433 @@
+@charset 'utf-8';
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,tr,img,a,span,address,strong,form,fieldset,input,button,select,textarea {  margin: 0;  padding: 0;  border: 0;  font-style: normal;}
+img,label,input,select {  vertical-align: top;}
+h1,h2,h3,h4,h5,h6,address,strong {  font-size: 1em;  font-weight: normal;}
+li {  list-style-type: none;}
+input,select,textarea {  font: 12px/1.4 "Nanum Gothic", NanumGothic, "돋움", "Dotum", sans-serif;  color: #777;}
+table {border-collapse: collapse;}
+a {  color: #444;  text-decoration: none;}
+a:hover,a:focus {  color: #f1c244;}
+
+.skip {  font-size: 0;  overflow: hidden;  width: 0;  height: 0;}
+
+body {  font: 12px/1.4 "Nanum Gothic", NanumGothic, "돋움", "Dotum", sans-serif;  color: #777;  background: #fff;}
+
+#skipnavi {  width: 0;  height: 0;  font-size: 0;  position: absolute;  left: -9999px;}
+
+.left {  float: left;}
+.right {  float: right;}
+.tl {  text-align: left;}
+.tr {  text-align: right;}
+.tc {  text-align: center;}
+.intro {  text-align: center;}
+.intro > img {  width: 100%;  height: auto;}
+.relative {  position: relative;}
+.absolute {  position: absolute;}
+
+html,body {  width: 100%;  height: 100%;}
+.gnb {  position: absolute;  z-index: 50;  width: 100%;  min-height: 100%;  height: auto;  top: 0;  left: 0;  display: none;}
+.gnb ul {  position: relative;  z-index: 999;  border-top: 0;  width: 100%;  display: table;  font-size: 0;}
+.gnb ul li {  width: 100%;  display: inline-block;}
+.gnb ul li img {  width: 100%;  height: auto;}
+.gnb ul li {}
+.gnb ul li a {  display: block;}
+.gnb .close {  padding-top: 7%;  text-align: right;  padding-bottom: 3%;}
+.gnb .close a {  display: inline-block;  width: 8%;  margin-right: 5%;}
+.gnb .close img {  width: 100%;}
+.wrap {  position: relative;  width: 100%;  background-color: #fff;}
+.wrap .head1 {  width: 100%;  background-color: #0a492e;  padding: 1.5% 0;}
+.wrap .head2 {  width: 100%;  height: 10%;  padding: 2% 0;  border-bottom: 1px solid #c9c9c9;  background-color: #fff;  position: relative;}
+.wrap .head2 a {  display: inline-block;}
+.wrap .head2 a.m-menu {   position: absolute;  right: 5%;  top: 32%;  width: 7%;}
+.wrap .head2 .exp {  width: 100%;}
+.wrap .head2 img {  width: 100%;}
+.wrap .head2 a.logo {  display: block;  text-align: center;  margin: 0 auto;  width: 35%;}
+.wrap .head2 .logo img {  width: 100%;}
+.wrap .top-banner img {  width: 100%;}
+.wrap .mobile {  position: absolute;  z-index: 50;  width: 100%;  min-height: 100%;  height: auto;  top: 0;  left: 0;  background: url(../img/gnb/gnb_bg2.png?reflash=20160101);  display: none;}
+.wrap .mobile img {  width: 100%;  margin: 27% 0;}
+.wrap .close-mobile {  font-size: 30px;  color: #fff;  position: absolute;  top: 3%;  right: 3%;}
+.wrap .list {  min-height: 370px;}
+.wrap .contents {  background: #fff;  min-height: 50%;  position: relative;}
+.wrap .contents.page {  background-color: #fff;}
+.wrap .contents.price {  background-color: #fff;  padding-top: 25%;  padding-bottom: 10%;}
+.wrap .contents .arrow {  width: 16%;  max-width: 65px;  position: absolute;}
+.wrap .contents .arrow img {  width: 100%;}
+.wrap .contents .button {  position: absolute;  bottom: 1%;  width: 100%;  text-align: center;}
+.wrap .contents .button div {  border-radius: 100%;  width: 20px;  height: 20px;  background: #6aa8a7;  margin: 0;}
+.wrap .contents .arrow.prev {  left: 50%;  margin-left: -130px;  margin-top: -10px;  display: none;}
+.wrap .contents .arrow.next {  display: none;  right: 50%;  margin-right: -130px;  margin-top: -10px;}
+.wrap .footer {  position: relative;  bottom: 0px;  margin: 0;  padding: 0;  width: 100%;}
+.wrap .footer .button {  position: relative;  width: 94%;  top: 70%;  background: #d7d7d7;}
+.wrap .footer .button.link {  overflow: hidden;  padding: 3% 3%;  background-color: #fff;}
+.wrap .footer .button.link a {  display: block;  width: 42%;  margin: auto;  text-align: center;}
+.wrap .footer .button.link a img {  width: 100%; }
+.wrap .footer .button.link a img.btn3 {  padding-top: 6px;}
+.wrap .footer .button.link a.pc {  width: 19%;  margin-top: 12px;}
+.wrap .footer .button.link p.copy {  width: 55%;  margin: 20px auto 0;  text-align: center;}
+.wrap .footer .button.link p.copy img {  width: 100%;}
+.wrap .footer .button .bnn {  width: 100%;}
+.wrap .footer .button .btn2 {  width: 0.7%;}
+.wrap .footer .button .center {  margin: 0 2%;}
+.wrap .footer .bg {  width: 100%;}
+
+/* mainslide */
+.wrap .contents #mainslide {  margin: 0 auto;  width: 100%;  position: relative;  padding-top: var(--goods-top-gap, 3%);}
+.wrap .contents #mainslide .owl-item a {  display: inline-block;}
+.wrap .contents #mainslide .owl-item a img {  width: 100%; display:block; margin:0; padding:0; /*padding-bottom: 20%;*/}
+.wrap .contents #mainslide img {  position: relative;}
+.wrap .contents #mainslide.goods {  text-align: center;}
+
+.wrap h1 {  width: 100%;  background-color: #fff;  padding-bottom: 5%;}
+.wrap h1 img {  width: 25%;  max-width: 130px;  display: block;  padding-left: 30px;  padding-top: 24px;}
+.wrap .contents h1 {  position: absolute;  top: 0;  left: 0;  z-index: 2;  background-color: transparent;}
+.wrap .contents .intro > img {  width: 100%;}
+.wrap .contents .intro1,
+.wrap .contents .intro2,
+.wrap .contents .intro4,
+.wrap .contents .intro5,
+.wrap .contents .intro6,
+.wrap .contents .intro7 {  background-color: #fff;}
+.wrap .contents .price-buttons img {  margin-right: 0.5%;  margin-bottom: 0.5%;}
+.wrap .contents .prices {  width: 93%;  text-align: center;  margin: 0 auto;  margin-top: 4%;  overflow: hidden;  zoom: 1;}
+.wrap .contents .prices li {  width: 48%;  margin: 0 1% 2% 1%;  float: left;}
+.wrap .contents .prices li.first {  border-top: 0;}
+.wrap .contents .prices li img {  width: 100%;}
+.wrap .contents .buy {  width: 100%;  margin: 0 auto;  text-align: center;  margin-top: 6%;  margin-bottom: 5%;  overflow: hidden;  background: #ddd0bd;}
+.wrap .contents .buy a {  display: block;  float: left;  width: 64.5%;  overflow: visible;}
+.wrap .contents .buy a:last-child {  float: right;  width: 35.5%;  margin-right: -0.1px;}
+.wrap .contents .buy img {  width: 100%;  display: none;}
+.goods .owl-item > div {  padding-top: 0%;}
+.wrap .contents .p612-1 {  position: absolute;  left: 22.5%;  top: 5%;  width: 38% !important;}
+.wrap .contents .p612-2 {  position: absolute;  left: 22.5%;  top: 30%;  width: 39% !important;}
+.lazyOwl {  width: 100%; padding-bottom: 20%;}
+.cate6-14 {  position: absolute !important;  left: 11%;  bottom: 0;}
+
+.bn > span {  float: left;  display: block;  width: 50%;}
+.bn > span img {  width: 100%;}
+.wrap .contents.price_bx h1 {  position: initial;}
+.wrap .price_bx {  padding-bottom: 22%;}
+.wrap .price_bx h1 img {  width: 91%;  max-width: 365px;  margin: 0 auto;  padding: 0;  padding-top: 25px;}
+.tab {  padding-bottom: 4%;}
+.tab > li > a {  width: 92%;  margin: 0 4%;}
+.tab > li > a img {  width: 100%;  margin-bottom: -1px;}
+.tab li a {  display: block;}
+.tab .pd {  overflow: hidden;  display: none;  width: 95%;  font-size: 0;  margin-left: 4%;  padding-bottom: 5%;  padding-top: 4%;}
+.tab .pd li {  display: inline-block;  width: 48%;  margin: 1% 1% 0 0;  box-sizing: border-box;}
+.tab .pd li img {  width: 100%;}
+.tab .pd li.back {  width: 100%;  text-align: center;  margin: 30px 0;  border: 0;}
+.tab .pd li.back a img {  width: auto;}
+.owl-wrapper {  touch-action: none;}
+
+/* ====== 높이/여백 유틸 ====== */
+.h1 {  height: 1%;}.h2 {  height: 2%;}.h3 {  height: 3%;}.h4 {  height: 4%;}.h5 {  height: 5%;}.h6 {  height: 6%;}.h7 {  height: 7%;}.h8 {  height: 8%;}.h9 {  height: 9%;}.h10 {  height: 10%;}.h11 {  height: 11%;}.h12 {  height: 12%;}.h13 {  height: 13%;}.h14 {  height: 14%;}.h15 {  height: 15%;}.h16 {  height: 16%;}.h17 {  height: 17%;}.h18 {  height: 18%;}.h19 {  height: 19%;}.h20 {  height: 20%;}.h21 {  height: 21%;}.h22 {  height: 22%;}.h23 {  height: 23%;}.h24 {  height: 24%;}.h25 {  height: 25%;}.h26 {  height: 26%;}.h27 {  height: 27%;}.h28 {  height: 28%;}.h29 {  height: 29%;}.h30 {  height: 30%;}.h31 {  height: 31%;}.h32 {  height: 32%;}.h33 {  height: 33%;}.h34 {  height: 34%;}.h35 {  height: 35%;}.h36 {  height: 36%;}.h37 {  height: 37%;}.h38 {  height: 38%;}.h39 {  height: 39%;}.h40 {  height: 40%;}.h41 {  height: 41%;}.h42 {  height: 42%;}.h43 {  height: 43%;}.h44 {  height: 44%;}.h45 {  height: 45%;}.h46 {  height: 46%;}.h47 {  height: 47%;}.h48 {  height: 48%;}.h49 {  height: 49%;}.h50 {  height: 50%;}.h51 {  height: 51%;}.h52 {  height: 52%;}.h53 {  height: 53%;}.h54 {  height: 54%;}.h55 {  height: 55%;}.h56 {  height: 56%;}.h57 {  height: 57%;}.h58 {  height: 58%;}.h59 {  height: 59%;}.h60 {  height: 60%;}.h61 {  height: 61%;}.h62 {  height: 62%;}.h63 {  height: 63%;}.h64 {  height: 64%;}.h65 {  height: 65%;}.h66 {  height: 66%;}
+.h68 {  height: 68%;}
+.h69 {  height: 69%;}
+.h70 {  height: 70%;}
+.h71 {  height: 71%;}
+.h72 {  height: 72%;}
+.h73 {  height: 73%;}
+.h74 {  height: 74%;}
+.h75 {  height: 75%;}
+.h76 {  height: 76%;}
+.h77 {  height: 77%;}
+.h78 {  height: 78%;}
+.h79 {  height: 79%;}
+.h80 {  height: 80%;}
+.h81 {  height: 81%;}
+.h82 {  height: 82%;}
+.h83 {  height: 83%;}
+.h84 {  height: 84%;}
+.h85 {  height: 85%;}
+.h86 {  height: 86%;}
+.h87 {  height: 87%;}
+.h88 {  height: 88%;}
+.h89 {  height: 89%;}
+.h90 {  height: 90%;}
+.h91 {  height: 91%;}
+.h92 {  height: 92%;}
+.h93 {  height: 93%;}
+.h94 {  height: 94%;}
+.h95 {  height: 95%;}
+.h96 {  height: 96%;}
+.h97 {  height: 97%;}
+.h98 {  height: 98%;}
+.h99 {  height: 99%;}
+.h100 {  height: 100%;}
+
+.mar_t-10 {  margin-top: -10%;}
+/* (좌/우/상/하 마진·패딩 유틸은 원본 유지) */
+.mar_l1 {  margin-left: 1%;}
+/* ... (생략 없이 기존과 동일하게 유지) ... */
+.mar_l100 {  margin-left: 100%;}
+.mar_r1 {  margin-right: 1%;}
+/* ... */
+.mar_r100 {  margin-right: 100%;}
+.mar_t05 {  margin-top: 0.5%;}
+.mar_t07 {  margin-top: 0.7%;}
+.mar_t1 {  margin-top: 1%;}
+/* ... */
+.mar_t100 {  margin-top: 100%;}
+.mar_b1 {  margin-bottom: 1%;}
+/* ... */
+.mar_b100 {  margin-bottom: 100%;}
+.pad_t1 {  padding-top: 1%;}
+/* ... */
+.pad_t100 {  padding-top: 100%;}
+.pad_l1 {  padding-left: 1%;}
+/* ... */
+.pad_l100 {  padding-left: 100%;}
+.pad_r1 {  padding-right: 1%;}
+/* ... */
+.pad_r100 {  padding-right: 100%;}
+.pad_b1 {  padding-bottom: 1%;}
+/* ... */
+.pad_b100 {  padding-bottom: 100%;}
+.bn {  overflow: hidden;}
+
+/* 상세 이미지 가로 100% 고정 */
+.list.goods .item img,
+img.goods-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 카테고리별 상품영역(.contents) 배경색 */
+body.cate1 .contents { background-color: #40220f; }
+body.cate2 .contents { background-color: #1f2739; }
+body.cate3 .contents { background-color: #56590c; }
+body.cate4 .contents { background-color: #10462b; }
+body.cate5 .contents { background-color: #6a3906; }
+body.cate6 .contents { background-color: #601115; }
+body.cate7 .contents { background-color: #2b2215; }
+
+/* ============================
+   카테고리 리스트(page1~∞) 간격/배경 제어 공통
+   ============================ */
+
+/* 변수를 한 군데서 통제 */
+:root{
+  --page-top-pad: 4.5vw;     /* 헤더 아래 상단 여백 */
+  --row-gap: 0;              /* 한 슬라이드 내 줄 간격(기본 0) */
+  --goods-top-gap: 3%;       /* mainslide 상단 여백 */
+  --goods-row-gap: 0;        /* 카드 하단 여백(줄 간격) */
+}
+
+/* 부드러운 배경 전환 */
+body[class^="cate"] .wrap .contents { transition: background-color .2s ease; }
+
+/* 헤더 아래 상단 여백(padding 방식으로 흰 띠 방지) */
+body[class^="cate"] .wrap .contents.page {
+  padding-top: var(--page-top-pad);
+}
+
+/* 한 슬라이드 안에서 위/아래 두 줄 사이 간격(기본 0) */
+body[class^="cate"] .list.goods .tc + .tc {
+  margin-top: var(--row-gap);
+}
+
+/* 마크업에 섞여있는 .mar_b6 강제 완화(=0으로) */
+body[class^="cate"] .mar_b6 {
+  margin-bottom: var(--row-gap) !important;
+}
+
+/* 헤더 하단 보더가 띠로 보이면 숨김 */
+body[class^="cate"] .wrap .head2 {
+  border-bottom-color: transparent;
+}
+
+/* owl 한 행 공백 제거 + 카드 하단 여백으로 간격 통제(기본 0) */
+body[class^="cate"] .contents.page #mainslide .owl-item { font-size:0; line-height:0; }
+body[class^="cate"] .contents.page #mainslide .owl-item a {
+  vertical-align: top;
+  margin-bottom: var(--goods-row-gap) !important;
+}
+
+/* ========== 폭 유틸리티(필요한 것만 유지) ========== */
+.w43 { width:43% !important; }
+.w45 { width:45% !important; }
+.w80 { width:80% !important; }
+
+/* ============================
+   메인(main.html) 전용 오버라이드
+   - GNB와 슬라이드(#mainslide) 사이 공백 제거
+   ============================ */
+body[main]{
+  --goods-top-gap: 0; /* mainslide 상단 여백 변수 0으로 */
+}
+
+body[main] .wrap .contents #mainslide{
+  padding-top: 0 !important;    /* 변수 외에도 확실히 0으로 고정 */
+  margin-top: 0 !important;     /* 혹시 모르는 margin도 제거 */
+}
+
+body[main] .wrap .head2{
+  border-bottom-color: transparent; /* 1px 보더가 흰 띠로 보이지 않게 */
+}
+
+/* ===== 메인 전용: 인디케이터(도트/바) 크기 축소 + 줄바꿈 방지 ===== */
+body[main] .owl-theme .owl-controls .owl-pagination{
+  display: flex;            /* 가운데 정렬 & 줄바꿈 제어 */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;        /* 절대 줄바꿈 금지 */
+  gap: 1.2vw;               /* 인디케이터 간격 (필요시 조정) */
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+}
+
+body[main] .owl-theme .owl-controls .owl-page{
+  display: block !important; /* flex 아이템으로 */
+}
+
+body[main] .owl-theme .owl-controls .owl-page span{
+  width: 7vw;               /* 가로폭 축소(뷰포트 기준) */
+  min-width: 18px;          /* 너무 작아지는 것 방지 */
+  max-width: 36px;          /* 너무 길어지는 것 방지 */
+  height: 4px;              /* 높이(막대 두께) */
+  margin: 0 !important;     /* 기본 마진 제거(간격은 gap으로 통일) */
+  border-radius: 999px;     /* 막대형(원형 원하면 50%) */
+}
+
+/* 더 작을 때 살짝 더 줄이기(선택) */
+@media (max-width: 360px){
+  body[main] .owl-theme .owl-controls .owl-page span{
+    width: 6.2vw;
+    max-width: 30px;
+  }
+}
+/* =========================================
+   모든 페이지(#mainslide) 공통 인디케이터 슬림막대
+   - 메인, page1~8 동일 스타일
+   - 줄바꿈 방지, 숫자 숨김
+   ========================================= */
+#mainslide.owl-theme .owl-controls .owl-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;         /* 줄바꿈 금지 */
+  gap: 1.2vw;                /* 인디케이터 간격 */
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;       /* 2중 안전장치 */
+}
+
+#mainslide.owl-theme .owl-controls .owl-page{ display:block !important; }
+
+#mainslide.owl-theme .owl-controls .owl-page span{
+  width: 7vw;                /* 막대 가로폭(뷰포트 기준) */
+  min-width: 16px;
+  max-width: 36px;
+  height: 4px;               /* 막대 두께 */
+  margin: 0 !important;      /* 기본 마진 제거(간격은 gap으로 관리) */
+  border-radius: 999px;      /* 둥근 막대 */
+  line-height: 0;            /* 숫자 숨김 보조 */
+  font-size: 0;              /* 숫자 숨김 */
+}
+
+/* 아주 작은 기기에서 더 줄이기 */
+@media (max-width:360px){
+  #mainslide.owl-theme .owl-controls .owl-page span{
+    width: 6vw;
+    max-width: 30px;
+  }
+}
+
+/* ===== 인디케이터 바닥 여백 보장 (메인은 0, 상품페이지는 여유) ===== */
+:root{
+  --pagi-gap-main: 0px;      /* 메인: 푸터와 붙여서 보이도록 0 */
+  --pagi-gap-cate: 22px;     /* 상품(page1~8): 인디케이터 높이만큼 여백 */
+}
+
+/* 인디케이터가 절대배치돼 가려지는 테마 보호 */
+#mainslide.owl-theme .owl-controls{ position: static !important; }
+
+/* 메인 */
+body[main] .wrap .contents #mainslide{
+  padding-bottom: var(--pagi-gap-main) !important;
+  margin-bottom: 0 !important;
+}
+
+/* 상품(page1~8) */
+body[class^="cate"] .wrap .contents.page #mainslide{
+  padding-bottom: var(--pagi-gap-cate) !important; /* 인디케이터 공간 확보 */
+}
+
+/* 아주 작은 기기에서 살짝 더 */
+@media (max-width:360px){
+  body[class^="cate"] .wrap .contents.page #mainslide{
+    padding-bottom: 26px !important;
+  }
+}
+
+/* =========================================
+   인디케이터 위치: 메인=오버레이, 상품=아래
+   ========================================= */
+
+/* 메인: 슬라이드 이미지 위 오버레이 */
+body[main] .wrap .contents #mainslide{
+  padding-bottom: 0 !important;           /* 푸터와 간격 제거 */
+}
+body[main] .wrap .contents #mainslide.owl-theme .owl-controls{
+  position: absolute !important;          /* 오버레이 */
+  left: 0; right: 0; bottom: 30px;        /* 필요시 값 조절 */
+  width: 100%;
+  z-index: 3;                             
+}
+
+/* 상품(page1~8): 슬라이드 아래로 */
+body[class^="cate"] .wrap .contents.page #mainslide{
+  padding-bottom: var(--pagi-gap-cate, 22px) !important;  /* 공간 확보 */
+}
+body[class^="cate"] .wrap .contents.page #mainslide.owl-theme .owl-controls{
+  position: static !important;            /* 아래쪽으로 내려오게 */
+  margin-top: 0;
+}
+
+/* 아주 작은 기기 보정(선택) */
+@media (max-width:360px){
+  body[class^="cate"] .wrap .contents.page #mainslide{
+    padding-bottom: 26px !important;
+  }
+}
+
+/* ===========================
+   Owl 인디케이터 컬러 커스텀
+   =========================== */
+:root{
+  /* 공통 기본값 */
+  --pagi-inactive: #b0b0b0;    /* 비활성 */
+  --pagi-active:   #ffffff;    /* 활성 */
+
+  /* 메인 전용(이미지 위 오버레이일 때 추천) */
+  --pagi-main-inactive: rgba(255,255,255,.38);
+  --pagi-main-active:   #ffffff;
+}
+
+/* 상품(page1~8 등) – 슬라이드 아래 인디케이터 */
+body[class^="cate"] #mainslide.owl-theme .owl-controls .owl-page span{
+  background: var(--pagi-inactive) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  transition: background .2s ease;
+}
+body[class^="cate"] #mainslide.owl-theme .owl-controls .owl-page.active span{
+  background: var(--pagi-active) !important;
+}
+
+/* 메인 – 슬라이드 위 오버레이 인디케이터 */
+body[main] #mainslide.owl-theme .owl-controls .owl-page span{
+  background: var(--pagi-main-inactive) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+}
+body[main] #mainslide.owl-theme .owl-controls .owl-page.active span{
+  background: var(--pagi-main-active) !important;
+}
+
+/* (선택) hover 시 */
+#mainslide.owl-theme .owl-controls .owl-page:hover span{
+  background: var(--pagi-active) !important;
+}

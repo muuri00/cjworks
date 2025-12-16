@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CJ 제일제당 - 2025 The Gift Collection</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- 3초 뒤 메인으로 이동 (브라우저가 meta-refresh 막을 때를 대비해 JS 폴백도 넣음) -->
+    <meta http-equiv="refresh" content="3; url=contents/main.html" />
+
+    <!-- 로컬 CSS (쿼리스트링 제거) -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .intro img { display:block; width:100%; height:auto; }
+    </style>
+  </head>
+
+  <body>
+    <div class="intro">
+      <a href="contents/main.html">
+        <img src="img/main.png" alt="CJ 제일제당 - 2025 The Gift Collection" />
+      </a>
+      <noscript>
+        <!-- JS가 꺼져 있으면 즉시 메인으로 -->
+        <meta http-equiv="refresh" content="0; url=contents/main.html" />
+      </noscript>
+    </div>
+
+    <!-- 순서: 라이브러리 → 초기화 -->
+    <script defer src="js/cjmobile.js"></script>
+    <script>
+      (function () {
+        function ready(fn) {
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+
+        // meta-refresh가 차단될 경우를 위한 JS 폴백(4초 후)
+        setTimeout(function () {
+          if (!/contents\/main\.html/.test(location.href)) {
+            location.replace('contents/main.html');
+          }
+        }, 4000);
+
+        // 해시 포워딩(#spam 등) 처리
+        ready(function () {
+          try {
+            if (typeof mobile === 'function') {
+              new mobile().module.control.forwarding();
+            }
+          } catch (e) { /* 무시 */ }
+        });
+      })();
+    </script>
+  </body>
+</html>
