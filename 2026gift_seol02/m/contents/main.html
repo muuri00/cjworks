@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CJ 제일제당 - 2025 The Gift Collection, 기업고객용</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+    <!-- CSS: 공용과 동일하게 캐시버스터 제거 -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.transitions.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- 안전장치(선택): 초기 높이 0 방지 -->
+    <style>
+      #mainslide, .owl-wrapper-outer, .owl-wrapper, .owl-item { min-height: 10px; }
+    </style>
+  </head>
+
+  <body main="true">
+    <div class="wrap">
+      <div class="gnb"></div>
+      <div class="head"></div>
+
+      <div class="contents page">
+        <div id="mainslide" class="list bt_main"></div>
+
+        <!-- 화살표: 캐시버스터 제거 -->
+        <a href="#;" class="arrow prev" style="display:none">
+          <img src="../img/arrow_l.png" alt="이전상품" />
+        </a>
+        <a href="#;" class="arrow next" style="display:none">
+          <img src="../img/arrow_r.png" alt="다음상품" />
+        </a>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+
+    <!-- 스크립트: 순서 중요! jQuery -> Owl -> 프로젝트 JS -> init -->
+    <script src="../js/jquery/jquery-1.11.0.min.js"></script>
+    <!-- 프로젝트 구조상 owl이 css 폴더에 있으니 경로만 유지. async 금지(순서 보장) -->
+    <script src="../css/owl-carousel/owl.carousel.js"></script>
+    <script src="../js/cjmobile.js"></script>
+
+    <script>
+      // 공용과 동일한 init 패턴 (try/catch)
+      (function () {
+        function ready(fn){
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+        ready(function () {
+          try {
+            new mobile({
+              header: '../inc/header.html',
+              gnb: '../inc/gnb.html',
+              product: '../inc/product.html',
+              footer: '../inc/footer.html'
+            }).module.view.init();
+          } catch (e) {
+            console.error('Main init failed:', e);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

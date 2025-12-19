@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>CJ 제일제당 - 2025 The Gift Collection, 기업고객용</title>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="likearts, sy" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="viewport" content="initial-scale=0.25, maximum-scale=1, user-scalable=yes" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="" rel="icon" type="image/x-icon" />
+
+    <!-- (중요) 페이지 전환/잔상 보정: JS 켜진 경우에만 적용되는 스코프 -->
+    <style>
+      /* 전환은 #catalogue.js-enhanced 일 때만 적용 (초기 흰 화면 방지용) */
+      #catalogue.js-enhanced { position: relative; }
+      #catalogue.js-enhanced .contents {
+        position: absolute; inset: 0;
+        opacity: 0; visibility: hidden; pointer-events: none; z-index: 0;
+        transition: opacity .22s ease-out;
+        will-change: opacity, transform;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        contain: paint;
+        isolation: isolate;
+      }
+      #catalogue.js-enhanced .contents.is-active {
+        opacity: 1; visibility: visible; pointer-events: auto; z-index: 1;
+      }
+      /* 배경 이미지 안전장치: 로딩되면 항상 보이도록 */
+      #catalogue .contents .bg {
+        position: absolute; top: 0; left: 0;
+        width: 1286px; height: 826px; object-fit: cover;
+        display: block; pointer-events: none; z-index: 0; max-width: none;
+      }
+      /* 리스트 레이어는 항상 위 */
+      #catalogue .contents .list { position: relative; width: 1286px; height: 826px; z-index: 1; }
+      #catalogue .contents .list > a { position: absolute; }
+    </style>
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () { (i[r].q = i[r].q || []).push(arguments); }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-47732513-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- jQuery (CDN) + Migrate + Easing -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- App -->
+    <script src="js/cj.js"></script>
+
+    <script>
+      var ismobile = false;
+      var arrowis  = false;
+
+      var UserAgent = navigator.userAgent;
+      if (
+        UserAgent.match(/iPhone|ipad|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null ||
+        UserAgent.match(/LG|SAMSUNG|Samsung/) != null
+      ) {
+        arrowis = true;
+      }
+      if ((screen.width < 1024 && screen.height < 600) || (screen.width < 600 && screen.height < 1024)) {
+        ismobile = true;
+        arrowis = true;
+      }
+
+      if (location.href.indexOf('?pc=1') < 0) {
+        if (ismobile) location.href = 'm/' + getParams();
+      } else {
+        ismobile = false;
+      }
+
+      function getParams() {
+        var locurl = location.href;
+        if (locurl.indexOf('#') != -1) {
+          var pageNo = locurl.substr(locurl.indexOf('#') + 1);
+          pageNo = pageNo.replace(' ', '').replace(';', '');
+          return '#' + pageNo;
+        }
+        return '';
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="skip_nav">
+      <a href="#catalogue" onclick="document.getElementById('catalogue').tabIndex = -1; document.getElementById('catalogue').focus();return false;">본문 바로가기</a>
+    </div>
+
+    <div id="wrap">
+      <!-- HEADER -->
+      <div id="header">
+        <div class="shop-wrap">
+          <div class="container shop">
+            <a href="https://www.cjthemarket.com/" target="_blank" rel="noopener">
+              <img src="img/inc/onmark.png" alt="cjonmart 바로가기" />
+            </a>
+          </div>
+        </div>
+        <div class="head"></div>
+      </div>
+
+      <!-- CATALOGUE -->
+      <div id="catalogue" data-pages="13">
+        <div class="contents-wrap">
+          <!-- (중요) 초기 흰 화면 방지를 위해 첫 contents는 is-active로 시작 -->
+          <div class="contents is-active">
+            <div class="list"></div>
+          </div>
+        </div>
+
+        <div id="control" class="control">
+          <a href="#;" class="arrow prev" action="prev" aria-label="이전 페이지">
+            <img src="img/inc/arrow_left.png" alt="이전페이지" />
+          </a>
+          <a href="#;" class="arrow next" action="next" aria-label="다음 페이지">
+            <img src="img/inc/arrow_right.png" alt="다음페이지" />
+          </a>
+        </div>
+      </div>
+
+      <div id="footer" class="copy">
+        <img src="img/inc/copy.png" alt="copyright @2025 CJ Cheil Jedang all rights reserved." />
+      </div>
+    </div>
+
+    <!-- Boot -->
+    <script>
+      // 전환 보정: JS가 활성화되었음을 표시하고, 초기 contents를 활성 상태로 고정
+      document.addEventListener('DOMContentLoaded', function () {
+        var cat = document.getElementById('catalogue');
+        if (cat) {
+          cat.classList.add('js-enhanced'); // 전환 CSS는 이 스코프에서만 동작
+          var first = cat.querySelector('.contents');
+          if (first && !first.classList.contains('is-active')) first.classList.add('is-active');
+        }
+      });
+
+      if (!ismobile) {
+        var spApp = new cj();
+
+        $(function () {
+          spApp.module.model.path = 'contents/';
+          // 총 페이지는 #catalogue[data-pages]로 자동 인식 (수동 지정 불필요)
+
+          spApp.module.control.loader('inc/gnb.html',  { type: 'gnb' });
+          spApp.module.control.loader('inc/data.json', { type: 'json', dataType: 'JSON' });
+
+          spApp.module.control.init();
+          if (!spApp.module.model.page) spApp.module.control.connect('1');
+        });
+
+        // goPage/preview는 기존 로직 유지
+        window.goPage = function (pidx) {
+          spApp.module.control.connect(String(pidx));
+        };
+        window.preview = function () {
+          spApp.module.control.loader('inc/preview.html', { type: 'preview' });
+        };
+      }
+    </script>
+  </body>
+</html>

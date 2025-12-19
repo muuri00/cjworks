@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CJ 제일제당 - 2025 The Gift Collection, 기업고객용</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"
+    />
+
+    <!-- 공용과 동일: 캐시버스터 제거 -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.list.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.transitions.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <!-- cate2 배경/간격 규칙 적용 -->
+  <body class="cate2">
+    <div class="wrap">
+      <div class="gnb"></div>
+      <div class="head"></div>
+
+      <div class="contents page bt02">
+        <div id="mainslide" class="list goods owl-carousel">
+
+          <!-- 01~02 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate2/1.html" class="w80">
+                <img src="../img/goods/thumb/cate2/2-1.png" alt="cate2-01" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate2/2.html" class="w80">
+                <img src="../img/goods/thumb/cate2/2-2.png" alt="cate2-02" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 03~04 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate2/3.html" class="w80">
+                <img src="../img/goods/thumb/cate2/2-3.png" alt="cate2-03" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate2/4.html" class="w80">
+                <img src="../img/goods/thumb/cate2/2-4.png" alt="cate2-04" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+
+    <!-- 스크립트: jQuery -> Owl -> 프로젝트 JS -> init (순서 보장, async 금지) -->
+    <script src="../js/jquery/jquery-1.11.0.min.js"></script>
+    <script src="../css/owl-carousel/owl.carousel.js"></script>
+    <script src="../js/cjmobile.js"></script>
+
+    <script>
+      (function () {
+        function ready(fn){
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+        ready(function () {
+          try {
+            new mobile({
+              header: '../inc/header.html',
+              gnb: '../inc/gnb.html',
+              product: '../inc/product.html',  // 카테고리 페이지에선 실사용 안하지만 구조 통일
+              footer: '../inc/footer.html'
+            }).module.view.init();
+          } catch (e) { console.error('page2 init failed:', e); }
+        });
+      })();
+    </script>
+  </body>
+</html>

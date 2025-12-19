@@ -1,0 +1,58 @@
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  opacity: 1;
+  text-decoration: none;
+}
+.owl-theme .owl-controls .owl-page {
+  display: none;
+  zoom: 1;
+}
+.owl-theme .owl-controls .owl-page.active {
+  display: inline-block;
+  zoom: 1;
+}
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 100px;
+  height: 25px;
+  margin: 5px 4px;
+  background: #fff;
+  transition: all ease 0.2s;
+  font-size: 20px;
+  font-weight: 400;
+}
+.owl-theme .owl-controls .owl-page span {
+  color: #784821;
+}
+.owl-theme .owl-controls .owl-page span b {
+  color: #784821;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  */filter: Alpha(Opacity=100);
+  background: ;
+}
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  font-size: 25px;
+  height: auto;
+  width: auto;
+  color: #000;
+  padding: 2px 10px;
+}
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+  width: 45px;
+  height: 9px;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 4px;
+}
+.owl-theme .owl-controls .owl-page.active span {
+  background-color: #002a42;
+}
+/*.owl-item:last-child {display: none;}*/
+/*.owl-theme .owl-controls .owl-page:nth-child(8) {display: none;}*/

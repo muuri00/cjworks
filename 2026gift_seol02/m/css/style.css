@@ -1,0 +1,476 @@
+@charset 'utf-8';
+
+/* ========== Reset & Base ========== */
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,tr,img,a,span,address,strong,form,fieldset,input,button,select,textarea { margin:0; padding:0; border:0; font-style:normal; }
+img,label,input,select { vertical-align:top; }
+h1,h2,h3,h4,h5,h6,address,strong { font-size:1em; font-weight:normal; }
+li { list-style-type:none; }
+input,select,textarea { font:12px/1.4 "Nanum Gothic", NanumGothic, "돋움", "Dotum", sans-serif; color:#777; }
+table { border-collapse:collapse; }
+a { color:#444; text-decoration:none; }
+a:hover,a:focus { color:#f1c244; }
+
+.skip { font-size:0; overflow:hidden; width:0; height:0; }
+body { font:12px/1.4 "Nanum Gothic", NanumGothic, "돋움", "Dotum", sans-serif; color:#777; background:#fff; }
+#skipnavi { width:0; height:0; font-size:0; position:absolute; left:-9999px; }
+
+.left { float:left; }
+.right { float:right; }
+.tl { text-align:left; }
+.tr { text-align:right; }
+.tc { text-align:center; }
+
+.intro { text-align:center; }
+.intro>img { width:100%; height:auto; }
+.relative { position:relative; }
+.absolute { position:absolute; }
+
+html,body { width:100%; height:100%; }
+
+/* ========== GNB / Layout ========== */
+.gnb { position:absolute; z-index:50; width:100%; min-height:100%; height:auto; top:0; left:0; display:none; }
+.gnb ul { position:relative; z-index:999; border-top:0; width:100%; display:table; font-size:0; }
+.gnb ul li { width:100%; display:inline-block; }
+.gnb ul li img { width:100%; height:auto; }
+.gnb ul li a { display:block; }
+.gnb .close { padding-top:7%; text-align:right; padding-bottom:3%; }
+.gnb .close a { display:inline-block; width:8%; margin-right:5%; }
+.gnb .close img { width:100%; }
+
+.wrap { position:relative; width:100%; background-color:#fff; }
+.wrap .head1 { width:100%; background-color:#0a492e; padding:1.5% 0; }
+.wrap .head2 { width:100%; height:10%; padding:2% 0; border-bottom:1px solid #c9c9c9; background-color:#fff; position:relative; }
+.wrap .head2 a { display:inline-block; }
+.wrap .head2 a.m-menu { position:absolute; right:5%; top:32%; width:7%; }
+.wrap .head2 .exp, .wrap .head2 img { width:100%; }
+.wrap .head2 a.logo { display:block; text-align:center; margin:0 auto; width:35%; }
+.wrap .head2 .logo img { width:100%; }
+
+.wrap .top-banner img { width:100%; }
+
+.wrap .mobile { position:absolute; z-index:50; width:100%; min-height:100%; height:auto; top:0; left:0; background:url(../img/gnb/gnb_bg2.png?reflash=20160101); display:none; }
+.wrap .mobile img { width:100%; margin:27% 0; }
+.wrap .close-mobile { font-size:30px; color:#fff; position:absolute; top:3%; right:3%; }
+
+.wrap .list { min-height:370px; }
+.wrap .contents { background:#fff; min-height:50%; position:relative; }
+.wrap .contents.page { background-color:#fff; }
+.wrap .contents.price { background-color:#fff; padding-top:25%; padding-bottom:10%; }
+
+.wrap .contents .arrow { width:16%; max-width:65px; position:absolute; }
+.wrap .contents .arrow img { width:100%; }
+.wrap .contents .button { position:absolute; bottom:1%; width:100%; text-align:center; }
+.wrap .contents .button div { border-radius:100%; width:20px; height:20px; background:#6aa8a7; margin:0; }
+.wrap .contents .arrow.prev { left:50%; margin-left:-130px; margin-top:-10px; display:none; }
+.wrap .contents .arrow.next { display:none; right:50%; margin-right:-130px; margin-top:-10px; }
+
+.wrap .footer { position:relative; bottom:0; margin:0; padding:0; width:100%; }
+.wrap .footer .button { position:relative; width:94%; top:70%; background:#d7d7d7; }
+.wrap .footer .button.link { overflow:hidden; padding:3% 3%; background-color:#fff; }
+.wrap .footer .button.link a { display:block; width:42%; margin:auto; text-align:center; }
+.wrap .footer .button.link a img { width:100%; }
+.wrap .footer .button.link a img.btn3 { padding-top:6px; }
+.wrap .footer .button.link a.pc { width:19%; margin-top:12px; }
+.wrap .footer .button.link p.copy { width:55%; margin:20px auto 0; text-align:center; }
+.wrap .footer .button.link p.copy img { width:100%; }
+.wrap .footer .button .bnn { width:100%; }
+.wrap .footer .button .btn2 { width:0.7%; }
+.wrap .footer .button .center { margin:0 2%; }
+.wrap .footer .bg { width:100%; }
+
+/* ========== Mainslide / Goods ========== */
+.wrap .contents #mainslide { margin-top:3%; margin:0 auto; width:100%; position:relative; }
+.wrap .contents #mainslide .owl-item a { display:inline-block; }
+.wrap .contents #mainslide .owl-item a img { width:100%; display:block; margin:0; padding:0; }
+.wrap .contents #mainslide img { position:relative; }
+.wrap .contents #mainslide.goods { text-align:center; }
+
+.wrap h1 { width:100%; background-color:#fff; padding-bottom:5%; }
+.wrap h1 img { width:25%; max-width:130px; display:block; padding-left:30px; padding-top:24px; }
+.wrap .contents h1 { position:absolute; top:0; left:0; z-index:2; background-color:transparent; }
+
+.wrap .contents .intro>img { width:100%; }
+.wrap .contents .intro1,
+.wrap .contents .intro2,
+.wrap .contents .intro4,
+.wrap .contents .intro5,
+.wrap .contents .intro6,
+.wrap .contents .intro7 { background-color:#fff; }
+
+.wrap .contents .price-buttons img { margin-right:0.5%; margin-bottom:0.5%; }
+.wrap .contents .prices { width:93%; text-align:center; margin:0 auto; margin-top:4%; overflow:hidden; zoom:1; }
+.wrap .contents .prices li { width:48%; margin:0 1% 2% 1%; float:left; }
+.wrap .contents .prices li.first { border-top:0; }
+.wrap .contents .prices li img { width:100%; }
+
+.wrap .contents .buy { width:100%; margin:0 auto; text-align:center; margin-top:6%; margin-bottom:5%; overflow:hidden; background:#ddd0bd; }
+.wrap .contents .buy a { display:block; float:left; width:64.5%; overflow:visible; }
+.wrap .contents .buy a:last-child { float:right; width:35.5%; margin-right:-0.1px; }
+.wrap .contents .buy img { width:100%; display:none; }
+
+.goods .owl-item>div { padding-top:0%; }
+.wrap .contents .p612-1 { position:absolute; left:22.5%; top:5%; width:38% !important; }
+.wrap .contents .p612-2 { position:absolute; left:22.5%; top:30%; width:39% !important; }
+
+.lazyOwl { width:100%; padding-bottom:20%; } /* 기본(페이지 밖) */
+.cate6-14 { position:absolute !important; left:11%; bottom:0; }
+
+.bn>span { float:left; display:block; width:50%; }
+.bn>span img { width:100%; }
+
+.wrap .contents.price_bx h1 { position:initial; }
+.wrap .price_bx { padding-bottom:22%; }
+.wrap .price_bx h1 img { width:91%; max-width:365px; margin:0 auto; padding:0; padding-top:25px; }
+
+.tab { padding-bottom:4%; }
+.tab>li>a { width:92%; margin:0 4%; }
+.tab>li>a img { width:100%; margin-bottom:-1px; }
+.tab li a { display:block; }
+.tab .pd { overflow:hidden; display:none; width:95%; font-size:0; margin-left:4%; padding-bottom:5%; padding-top:4%; }
+.tab .pd li { display:inline-block; width:48%; margin:1% 1% 0 0; box-sizing:border-box; }
+.tab .pd li img { width:100%; }
+.tab .pd li.back { width:100%; text-align:center; margin:30px 0; border:0; }
+.tab .pd li.back a img { width:auto; }
+.owl-wrapper { touch-action:none; }
+
+.bn { overflow:hidden; }
+
+/* ========== 카테고리 배경색(특판 전용 bt01~bt08) ========== */
+:root{
+  --cate1-bg:#40220f;
+  --cate2-bg:#40220f;
+  --cate3-bg:#1f2739;
+  --cate4-bg:#56590c;
+  --cate5-bg:#10462b;
+  --cate6-bg:#6a3906;
+  --cate7-bg:#601115;
+  --cate8-bg:#2b2215;
+
+  /* page1~8 공통 간격 변수 (필요시 값만 조절) */
+  --goods-top-gap: 4.5vw;   /* GNB 아래 상단 여백 */
+  --goods-row-gap: 0.5vw;       /* 행 간격(줄과 줄 사이), 0 = 촘촘 */
+}
+
+.contents.page.bt01 { background-color:var(--cate1-bg); }
+.contents.page.bt02 { background-color:var(--cate2-bg); }
+.contents.page.bt03 { background-color:var(--cate3-bg); }
+.contents.page.bt04 { background-color:var(--cate4-bg); }
+.contents.page.bt05 { background-color:var(--cate5-bg); }
+.contents.page.bt06 { background-color:var(--cate6-bg); }
+.contents.page.bt07 { background-color:var(--cate7-bg); }
+.contents.page.bt08 { background-color:var(--cate8-bg); }
+
+/* ========== page1~8 전용: 상단 여백 & 행 간격 제어 ========== */
+/* 상단 여백: GNB 아래에서 상품 묶음이 배경색 유지한 채 내려오도록 */
+.contents.page.bt01 #mainslide,
+.contents.page.bt02 #mainslide,
+.contents.page.bt03 #mainslide,
+.contents.page.bt04 #mainslide,
+.contents.page.bt05 #mainslide,
+.contents.page.bt06 #mainslide,
+.contents.page.bt07 #mainslide,
+.contents.page.bt08 #mainslide {
+  padding-top: var(--goods-top-gap);
+}
+
+/* 한 줄 내 인라인블록 공백 제거 */
+.contents.page.bt01 #mainslide .owl-item,
+.contents.page.bt02 #mainslide .owl-item,
+.contents.page.bt03 #mainslide .owl-item,
+.contents.page.bt04 #mainslide .owl-item,
+.contents.page.bt05 #mainslide .owl-item,
+.contents.page.bt06 #mainslide .owl-item,
+.contents.page.bt07 #mainslide .owl-item,
+.contents.page.bt08 #mainslide .owl-item {
+  font-size:0;
+  line-height:0;
+}
+
+/* 카드 하단 마진으로 ‘행 간격’만 통제 (가장 강하게 적용) */
+.contents.page.bt01 #mainslide .owl-item a,
+.contents.page.bt02 #mainslide .owl-item a,
+.contents.page.bt03 #mainslide .owl-item a,
+.contents.page.bt04 #mainslide .owl-item a,
+.contents.page.bt05 #mainslide .owl-item a,
+.contents.page.bt06 #mainslide .owl-item a,
+.contents.page.bt07 #mainslide .owl-item a,
+.contents.page.bt08 #mainslide .owl-item a {
+  display:inline-block;
+  vertical-align:top;
+  margin-bottom: var(--goods-row-gap) !important;
+}
+
+/* 이미지 안전장치 */
+.contents.page.bt01 #mainslide .owl-item a img,
+.contents.page.bt02 #mainslide .owl-item a img,
+.contents.page.bt03 #mainslide .owl-item a img,
+.contents.page.bt04 #mainslide .owl-item a img,
+.contents.page.bt05 #mainslide .owl-item a img,
+.contents.page.bt06 #mainslide .owl-item a img,
+.contents.page.bt07 #mainslide .owl-item a img,
+.contents.page.bt08 #mainslide .owl-item a img {
+  display:block; width:100%; max-width:100%; height:auto; margin:0; padding:0;
+}
+
+/* 상세 이미지 가로 100% 고정 (상세/리스트 공통) */
+.list.goods .item img,
+img.goods-img { display:block; width:100%; max-width:100%; height:auto; }
+
+/* 리스트에서 두 번째 줄부터 위쪽 여백(보정) */
+.contents.page.bt01 .list.goods .tc + .tc,
+.contents.page.bt02 .list.goods .tc + .tc,
+.contents.page.bt03 .list.goods .tc + .tc,
+.contents.page.bt04 .list.goods .tc + .tc,
+.contents.page.bt05 .list.goods .tc + .tc,
+.contents.page.bt06 .list.goods .tc + .tc,
+.contents.page.bt07 .list.goods .tc + .tc,
+.contents.page.bt08 .list.goods .tc + .tc {
+  margin-top: var(--goods-row-gap);
+}
+
+/* 페이지 내부에서 .mar_b* 유틸이 들어오더라도 행 간격 변수로 정렬 */
+.contents.page.bt01 .list.goods .tc[class*="mar_b"],
+.contents.page.bt02 .list.goods .tc[class*="mar_b"],
+.contents.page.bt03 .list.goods .tc[class*="mar_b"],
+.contents.page.bt04 .list.goods .tc[class*="mar_b"],
+.contents.page.bt05 .list.goods .tc[class*="mar_b"],
+.contents.page.bt06 .list.goods .tc[class*="mar_b"],
+.contents.page.bt07 .list.goods .tc[class*="mar_b"],
+.contents.page.bt08 .list.goods .tc[class*="mar_b"] {
+  margin-bottom: var(--goods-row-gap) !important;
+}
+
+/* lazyOwl 잔여 패딩 제거(페이지에서만) */
+.contents.page.bt01 .lazyOwl,
+.contents.page.bt02 .lazyOwl,
+.contents.page.bt03 .lazyOwl,
+.contents.page.bt04 .lazyOwl,
+.contents.page.bt05 .lazyOwl,
+.contents.page.bt06 .lazyOwl,
+.contents.page.bt07 .lazyOwl,
+.contents.page.bt08 .lazyOwl {
+  padding-bottom:0 !important;
+}
+
+/* 필요 시 헤더 하단 보더 라인 숨김(페이지에서만) */
+.contents.page.bt01 ~ .head2,
+.contents.page.bt02 ~ .head2,
+.contents.page.bt03 ~ .head2,
+.contents.page.bt04 ~ .head2,
+.contents.page.bt05 ~ .head2,
+.contents.page.bt06 ~ .head2,
+.contents.page.bt07 ~ .head2,
+.contents.page.bt08 ~ .head2 { border-bottom-color:transparent; }
+
+/* ========== 폭 유틸리티(단일) ========== */
+.w43 { width:43% !important; }
+.w45 { width:45% !important; }
+.w80 { width:80% !important; }
+
+/* ========== (유지) 자주 쓰이는 마진/패딩 유틸 ========== */
+/* ㅡ 좌/우 마진 유틸 (필요 블록만 발췌/유지) */
+.mar_l1 { margin-left:1%; }  .mar_l2 { margin-left:2%; }  .mar_l3 { margin-left:3%; }  .mar_l4 { margin-left:4%; }  .mar_l5 { margin-left:5%; }
+.mar_r1 { margin-right:1%; } .mar_r2 { margin-right:2%; } .mar_r3 { margin-right:3%; } .mar_r4 { margin-right:4%; } .mar_r5 { margin-right:5%; }
+
+/* ㅡ 상단 마진 */
+.mar_t05 { margin-top:0.5%; } .mar_t07 { margin-top:0.7%; }
+.mar_t1 { margin-top:1%; }  .mar_t2 { margin-top:2%; }  .mar_t3 { margin-top:3%; }  .mar_t4 { margin-top:4%; }  .mar_t5 { margin-top:5%; }
+.mar_t6 { margin-top:6%; }  .mar_t7 { margin-top:7%; }  .mar_t8 { margin-top:8%; }  .mar_t9 { margin-top:9%; }  .mar_t10 { margin-top:10%; }
+
+/* ㅡ 하단 마진(자주 쓰는 값 위주로 유지) */
+.mar_b1 { margin-bottom:1%; }  .mar_b2 { margin-bottom:2%; }  .mar_b3 { margin-bottom:3%; }
+.mar_b4 { margin-bottom:4%; }  .mar_b5 { margin-bottom:5%; }  .mar_b6 { margin-bottom:6%; } /* 페이지 내부에서 행 간격 변수로 오버라이드됨 */
+.mar_b8 { margin-bottom:8%; }  .mar_b10 { margin-bottom:10%; }
+
+/* ㅡ 상/하 패딩(필요 최소만 유지) */
+.pad_t1 { padding-top:1%; } .pad_t2 { padding-top:2%; } .pad_t3 { padding-top:3%; } .pad_t4 { padding-top:4%; } .pad_t5 { padding-top:5%; }
+.pad_b1 { padding-bottom:1%; } .pad_b2 { padding-bottom:2%; } .pad_b3 { padding-bottom:3%; } .pad_b4 { padding-bottom:4%; } .pad_b5 { padding-bottom:5%; }
+
+/* ㅡ 좌/우 패딩(필요 최소만 유지) */
+.pad_l1 { padding-left:1%; }  .pad_l2 { padding-left:2%; }  .pad_l3 { padding-left:3%; }  .pad_l4 { padding-left:4%; }  .pad_l5 { padding-left:5%; }
+.pad_r1 { padding-right:1%; } .pad_r2 { padding-right:2%; } .pad_r3 { padding-right:3%; } .pad_r4 { padding-right:4%; } .pad_r5 { padding-right:5%; }
+
+/* ㅡ 기타 */
+.mar_t-10 { margin-top:-10%; }
+
+#_mainslide_min_hack_,
+#_mainslide_min_hack_ ~ .owl-wrapper-outer,
+#_mainslide_min_hack_ ~ .owl-wrapper,
+#_mainslide_min_hack_ ~ .owl-item { min-height: 10px; }
+
+/* ===== [특판 메인 전용] 인디케이터 1줄 유지 + 가로폭 축소 ===== */
+body[main] .owl-theme .owl-controls .owl-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;      /* 줄바꿈 방지 */
+  gap: 1.2vw;             /* 인디케이터 간 간격 */
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;    /* 혹시 모를 줄바꿈 방지 2중 안전장치 */
+}
+
+body[main] .owl-theme .owl-controls .owl-page{ display:block !important; }
+
+body[main] .owl-theme .owl-controls .owl-page span{
+  width: 7vw;             /* 막대 가로폭(뷰포트 기준) */
+  min-width: 16px;
+  max-width: 36px;
+  height: 4px;            /* 두께 */
+  margin: 0 !important;   /* 기본 마진 제거 (간격은 gap으로 통일) */
+  border-radius: 999px;   /* 막대형 (원형 원하면 50%) */
+}
+
+/* 아주 작은 기기에서 더 줄이기(선택) */
+@media (max-width:360px){
+  body[main] .owl-theme .owl-controls .owl-page span{
+    width: 6vw;
+    max-width: 30px;
+  }
+}
+
+/* ===== [특판 서브(page1~8 등)] 번호형 인디케이터는 영향 없도록 원복 ===== */
+body:not([main]) .owl-theme .owl-controls .owl-pagination{
+  display: block;         /* owl 기본 흐름 */
+  white-space: normal;
+}
+body:not([main]) .owl-theme .owl-controls .owl-page span{
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+  margin: 0 3px !important;
+  padding: 0 6px;         /* 숫자 가독성 */
+}
+/* =========================================
+   모든 페이지(#mainslide) 공통 인디케이터 슬림막대
+   - 메인, page1~8 동일 스타일
+   - 줄바꿈 방지, 숫자 숨김
+   ========================================= */
+#mainslide.owl-theme .owl-controls .owl-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;         /* 줄바꿈 금지 */
+  gap: 1.2vw;                /* 인디케이터 간격 */
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;       /* 2중 안전장치 */
+}
+
+#mainslide.owl-theme .owl-controls .owl-page{ display:block !important; }
+
+#mainslide.owl-theme .owl-controls .owl-page span{
+  width: 7vw;                /* 막대 가로폭(뷰포트 기준) */
+  min-width: 16px;
+  max-width: 36px;
+  height: 4px;               /* 막대 두께 */
+  margin: 0 !important;      /* 기본 마진 제거(간격은 gap으로 관리) */
+  border-radius: 999px;      /* 둥근 막대 */
+  line-height: 0;            /* 숫자 숨김 보조 */
+  font-size: 0;              /* 숫자 숨김 */
+}
+
+/* 아주 작은 기기에서 더 줄이기 */
+@media (max-width:360px){
+  #mainslide.owl-theme .owl-controls .owl-page span{
+    width: 6vw;
+    max-width: 30px;
+  }
+}
+
+/* ===== 인디케이터 바닥 여백 보장 (메인은 0, 상품페이지는 여유) ===== */
+:root{
+  --pagi-gap-main: 0px;      /* 메인: 푸터와 붙여서 보이도록 0 */
+  --pagi-gap-cate: 22px;     /* 상품(page1~8): 인디케이터 높이만큼 여백 */
+}
+
+/* 인디케이터가 절대배치돼 가려지는 테마 보호 */
+#mainslide.owl-theme .owl-controls{ position: static !important; }
+
+/* 메인 */
+body[main] .wrap .contents #mainslide{
+  padding-bottom: var(--pagi-gap-main) !important;
+  margin-bottom: 0 !important;
+}
+
+/* 상품(page1~8) */
+body[class^="cate"] .wrap .contents.page #mainslide{
+  padding-bottom: var(--pagi-gap-cate) !important; /* 인디케이터 공간 확보 */
+}
+
+/* 아주 작은 기기에서 살짝 더 */
+@media (max-width:360px){
+  body[class^="cate"] .wrap .contents.page #mainslide{
+    padding-bottom: 26px !important;
+  }
+}
+
+/* =========================================
+   인디케이터 위치: 메인=오버레이, 상품=아래
+   ========================================= */
+
+/* 메인: 슬라이드 이미지 위 오버레이 */
+body[main] .wrap .contents #mainslide{
+  padding-bottom: 0 !important;           /* 푸터와 간격 제거 */
+}
+body[main] .wrap .contents #mainslide.owl-theme .owl-controls{
+  position: absolute !important;          /* 오버레이 */
+  left: 0; right: 0; bottom: 30px;        /* 필요시 값 조절 */
+  width: 100%;
+  z-index: 3;                             
+}
+
+/* 상품(page1~8): 슬라이드 아래로 */
+body[class^="cate"] .wrap .contents.page #mainslide{
+  padding-bottom: var(--pagi-gap-cate, 22px) !important;  
+}
+body[class^="cate"] .wrap .contents.page #mainslide.owl-theme .owl-controls{
+  position: static !important;           
+  margin-top: 0;
+}
+
+/* 아주 작은 기기 보정(선택) */
+@media (max-width:360px){
+  body[class^="cate"] .wrap .contents.page #mainslide{
+    padding-bottom: 26px !important;
+  }
+}
+
+/* ===========================
+   Owl 인디케이터 컬러 커스텀
+   =========================== */
+:root{
+  /* 공통 기본값 */
+  --pagi-inactive: #b0b0b0;    /* 비활성 */
+  --pagi-active:   #ffffff;    /* 활성 */
+
+  /* 메인 전용(이미지 위 오버레이일 때 추천) */
+  --pagi-main-inactive: rgba(255,255,255,.38);
+  --pagi-main-active:   #ffffff;
+}
+
+/* 상품(page1~8 등) – 슬라이드 아래 인디케이터 */
+body[class^="cate"] #mainslide.owl-theme .owl-controls .owl-page span{
+  background: var(--pagi-inactive) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  transition: background .2s ease;
+}
+body[class^="cate"] #mainslide.owl-theme .owl-controls .owl-page.active span{
+  background: var(--pagi-active) !important;
+}
+
+/* 메인 – 슬라이드 위 오버레이 인디케이터 */
+body[main] #mainslide.owl-theme .owl-controls .owl-page span{
+  background: var(--pagi-main-inactive) !important;
+  border: 0 !important;
+  opacity: 1 !important;
+}
+body[main] #mainslide.owl-theme .owl-controls .owl-page.active span{
+  background: var(--pagi-main-active) !important;
+}
+
+/* (선택) hover 시 */
+#mainslide.owl-theme .owl-controls .owl-page:hover span{
+  background: var(--pagi-active) !important;
+}

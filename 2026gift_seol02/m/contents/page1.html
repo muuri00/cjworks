@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CJ 제일제당 - 2025 The Gift Collection, 기업고객용</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"
+    />
+
+    <!-- 공용과 동일: 캐시버스터 제거 -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/control.list.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl-carousel/owl.transitions.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <!-- cate1 배경/간격 규칙 적용 -->
+  <body class="cate1">
+    <div class="wrap">
+      <div class="gnb"></div>
+      <div class="head"></div>
+
+      <div class="contents page bt01">
+        <!-- 카테고리 리스트: 슬라이드 1장에 2행(위/아래 1개씩) -->
+        <div id="mainslide" class="list goods owl-carousel">
+          
+          <!-- 01~02 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/1.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-1.png" alt="cate1-01" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/2.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-2.png" alt="cate1-02" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 03~04 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/3.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-3.png" alt="cate1-03" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/4.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-4.png" alt="cate1-04" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 05~06 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/5.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-5.png" alt="cate1-05" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/6.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-6.png" alt="cate1-06" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 07~08 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/7.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-7.png" alt="cate1-07" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/8.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-8.png" alt="cate1-08" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 09~10 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/9.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-9.png" alt="cate1-09" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/10.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-10.png" alt="cate1-10" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 11~12 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/11.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-11.png" alt="cate1-11" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/12.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-12.png" alt="cate1-12" />
+              </a>
+            </div>
+          </div>
+
+          <!-- 13~14 -->
+          <div class="item">
+            <div class="tc mar_b6">
+              <a href="../detail/cate1/13.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-13.png" alt="cate1-13" />
+              </a>
+            </div>
+            <div class="tc">
+              <a href="../detail/cate1/14.html" class="w80">
+                <img src="../img/goods/thumb/cate1/1-14.png" alt="cate1-14" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+
+    <!-- 스크립트: jQuery -> Owl -> 프로젝트 JS -> init (순서 보장, async 금지) -->
+    <script src="../js/jquery/jquery-1.11.0.min.js"></script>
+    <script src="../css/owl-carousel/owl.carousel.js"></script>
+    <script src="../js/cjmobile.js"></script>
+
+    <script>
+      (function () {
+        function ready(fn){
+          if (document.readyState !== 'loading') fn();
+          else document.addEventListener('DOMContentLoaded', fn);
+        }
+        ready(function () {
+          try {
+            new mobile({
+              header: '../inc/header.html',
+              gnb: '../inc/gnb.html',
+              product: '../inc/product.html',  // 카테고리 페이지에선 미사용이나 객체 구조 유지
+              footer: '../inc/footer.html'
+            }).module.view.init();
+          } catch (e) { console.error('page1 init failed:', e); }
+        });
+      })();
+    </script>
+  </body>
+</html>

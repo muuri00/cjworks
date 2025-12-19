@@ -1,0 +1,13 @@
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,tr,img,a,span,address,strong,form,fieldset,input,button,select,textarea	{margin:0; padding:0; border:0; font-style: normal;}
+img, label, input, select	{vertical-align: top;}
+h1,h2,h3,h4,h5,h6,address,strong		{font-size:1em; font-weight: normal;}
+li	{list-style-type:none;}
+input, select, textarea	{font:12px/1.4 'Nanum Gothic', NanumGothic, '돋움', 'Dotum', sans-serif; color:#777;}
+table {border-collapse:collapse;}
+a {color:#444; text-decoration: none;}
+a:hover, a:focus {color:#f1c244;}
+
+.skip { font-size:0px; overflow:hidden; width:0px; height:0px; }
+
+body		{font:12px/1.4 'Nanum Gothic', NanumGothic, '돋움', 'Dotum', sans-serif; color:#777; background:#fff; }
+#skipnavi		{width:0; height:0; font-size:0; position: absolute; left:-9999px;}
