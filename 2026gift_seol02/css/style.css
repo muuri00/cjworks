@@ -321,28 +321,29 @@
    Page Positions
 ====================== */
 /* page3 */
-.page3 .prd1 { right: 200x; top: 180px; }
-.page3 .prd2 { right: 110px; top: 180px; }
-.page3 .prd3 { right: 200px; top: 490px; }
+.page3 .prd1 { right: 360px; top: 170px; }
+.page3 .prd2 { right: 100px; top: 170px; }
+.page3 .prd3 { right: 360px; top: 490px; }
 .page3 .prd4 { right: 110px; top: 490px; }
 
 /* page4 */
-.page4 .prd1  { left: 134px; top: 126px; }
-.page4 .prd2  { left: 200px; top: 490px; }
-.page4 .prd3  { right: 176px; top: 126px; }
-.page4 .prd4 { right: 142px; top: 490px; }
+.page4 .prd1  { left: 200px; top: 150px; }
+.page4 .prd2  { left: 200px; top: 460px; }
+.page4 .prd3  { right: 200px; top: 180px; }
+.page4 .prd4  { right: 180px; top: 460px; }
 
 /* page5 */
-.page5 .prd11 { left: 180px; top: 145px; }
-.page5 .prd12 { left: 200px; top: 450px; }
-.page5 .prd13 { right: 200px; top: 145px; }
-.page5 .prd14 { right: 180px; top: 450px; }
+.page5 .prd5 { left: 200px; top: 145px; }
+.page5 .prd6 { left: 200px; top: 450px; }
+.page5 .prd7 { right: 190px; top: 145px; }
+.page5 .prd8 { right: 190px; top: 450px; }
 
 /* page6 */
-.page6 .prd1 { right: 370px; top: 130px; }
-.page6 .prd2 { right: 110px; top: 130px; }
-.page6 .prd3 { right: 370px; top: 468px; }
-.page6 .prd4 { right: 110px; top: 468px; }
+.page6 .prd9  { left: 200px; top: 145px; }
+.page6 .prd10 { left: 200px; top: 450px; }
+.page6 .prd11 { right: 190px; top: 145px; }
+.page6 .prd12 { right: 370px; top: 480px; }
+.page6 .prd13 { right: 120px; top: 480px; }
 
 /* page7 */
 .page7 .prd1 { right: 370px; top: 130px; }
@@ -351,17 +352,23 @@
 .page7 .prd4 { right: 110px; top: 468px; }
 
 /* page8 */
-.page8 .prd1 { right: 200px; top: 140px; }
-.page8 .prd2 { right: 340px; top: 490px; }
-.page8 .prd3 { right: 110px; top: 490px; }
+.page8 .prd1 { right: 370px; top: 160px; }
+.page8 .prd2 { right: 110px; top: 160px; }
+.page8 .prd3 { right: 370px; top: 468px; }
+.page8 .prd4 { right: 110px; top: 468px; }
 
 /* page9 */
-.page9 .prd1 { right: 170px; top: 160px; }
-.page9 .prd2 { right: 360px; top: 460px; }
-.page9 .prd3 { right: 120px; top: 460px; }
+.page9 .prd1 { right: 370px; top: 160px; }
+.page9 .prd2 { right: 110px; top: 160px; }
+.page9 .prd3 { right: 370px; top: 468px; }
+.page9 .prd4 { right: 110px; top: 468px; }
 
 /* page10 */
-.page10 .prd1 { right: 440px; top: 120px; }
+.page10 .prd1 {  right: 200px;  top: 140px;}
+.page10 .prd2 {  right: 380px;  top: 460px;}
+.page10 .prd3 {  right: 120px;  top: 460px;}
+
+/*.page10 .prd1 { right: 440px; top: 120px; }
 .page10 .prd2 { right: 280px; top: 120px; }
 .page10 .prd3 { right: 110px; top: 120px; }
 .page10 .prd4 { right: 440px; top: 330px; }
@@ -379,9 +386,15 @@
 .page11 .prd5 { right: 110px; top: 576px; }
 
 /* page12 */
-.page12 .prd1 { right: 186px; top: 140px; }
-.page12 .prd2 { right: 360px; top: 460px; }
-.page12 .prd3 { right: 110px; top: 460px; }
+.page12 .prd1 {  right: 370px;  top: 140px;}
+.page12 .prd2 {  right: 180px;  top: 140px;}
+.page12 .prd3 {  right: 440px;  top: 330px;}
+.page12 .prd4 {  right: 270px;  top: 330px;}
+.page12 .prd5 {  right: 110px;  top: 330px;}
+.page12 .prd6 {  right: 440px;  top: 550px;}
+.page12 .prd7 {  right: 270px;  top: 550px;}
+.page12 .prd8 {  right: 110px;  top: 550px;}
+
 
 /* ======================
    Preview (공용)
