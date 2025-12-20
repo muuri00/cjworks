@@ -321,9 +321,9 @@
    Page Positions
 ====================== */
 /* page3 */
-.page3 .prd1 { right: 340x; top: 180px; }
-.page3 .prd2 { right: 110px; top: 490px; }
-.page3 .prd3 { right: 340px; top: 490px; }
+.page3 .prd1 { right: 200x; top: 180px; }
+.page3 .prd2 { right: 110px; top: 180px; }
+.page3 .prd3 { right: 200px; top: 490px; }
 .page3 .prd4 { right: 110px; top: 490px; }
 
 /* page4 */
