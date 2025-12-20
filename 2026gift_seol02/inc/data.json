@@ -1,63 +1,63 @@
 {
   "cate1": [
-  { "img": "img/goods/detail/cate1/1-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-3.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-4.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-5.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-6.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-7.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-8.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-9.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-10.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-11.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-12.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-13.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate1/1-14.png", "buy": "", "alt": "" }
-],
+    { "img": "img/goods/detail/cate1/1-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate1/1-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate1/1-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate1/1-4.png", "buy": "", "alt": "" }
+  ],
   "cate2": [
-  { "img": "img/goods/detail/cate2/2-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate2/2-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate2/2-3.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate2/2-4.png", "buy": "", "alt": "" }
-],
+    { "img": "img/goods/detail/cate2/2-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-4.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-5.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-6.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-7.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-8.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-9.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-10.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-11.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-12.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate2/2-13.png", "buy": "", "alt": "" }
+  ],
   "cate3": [
-  { "img": "img/goods/detail/cate3/3-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate3/3-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate3/3-3.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate3/3-4.png", "buy": "", "alt": "" }
-],
+    { "img": "img/goods/detail/cate3/3-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate3/3-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate3/3-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate3/3-4.png", "buy": "", "alt": "" }
+  ],
   "cate4": [
-  { "img": "img/goods/detail/cate4/4-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate4/4-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate4/4-3.png", "buy": "", "alt": "" }
-],
+    { "img": "img/goods/detail/cate4/4-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate4/4-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate4/4-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate4/4-4.png", "buy": "", "alt": "" }
+  ],
   "cate5": [
-  { "img": "img/goods/detail/cate5/5-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate5/5-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate5/5-3.png", "buy": "", "alt": "" }
-],
+    { "img": "img/goods/detail/cate5/5-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate5/5-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate5/5-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate5/5-4.png", "buy": "", "alt": "" }
+  ],
   "cate6": [
-  { "img": "img/goods/detail/cate6/6-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-3.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-4.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-5.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-6.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-7.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-8.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate6/6-9.png", "buy": "", "alt": "" }
-],
-"cate7": [
-  { "img": "img/goods/detail/cate7/7-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate7/7-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate7/7-3.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate7/7-4.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate7/7-5.png", "buy": "", "alt": "" }
-],
-"cate8": [
-  { "img": "img/goods/detail/cate8/8-1.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate8/8-2.png", "buy": "", "alt": "" },
-  { "img": "img/goods/detail/cate8/8-3.png", "buy": "", "alt": "" }
-]
+    { "img": "img/goods/detail/cate6/6-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate6/6-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate6/6-3.png", "buy": "", "alt": "" }
+  ],
+  "cate7": [
+    { "img": "img/goods/detail/cate7/7-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate7/7-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate7/7-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate7/7-4.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate7/7-5.png", "buy": "", "alt": "" }
+  ],
+  "cate8": [
+    { "img": "img/goods/detail/cate8/8-1.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-2.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-3.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-4.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-5.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-6.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-7.png", "buy": "", "alt": "" },
+    { "img": "img/goods/detail/cate8/8-8.png", "buy": "", "alt": "" }
+  ]
 }
