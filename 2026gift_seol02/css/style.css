@@ -1,55 +1,512 @@
-@charset 'utf-8'; @import url(default.css);
-/* Utilities */ .left { float: left; } .right { float: right; }
-/* Loading */ .loading { display: none !important; } .loading .overlay { position: absolute; inset: 0; background: #fff; opacity: 0.3; filter: alpha(opacity=30); } .loading .gif { display: none !important; }
-/* Layout base */ #wrap { position: relative; background: #ffffff; } #skip_nav a { position: absolute; top: -500px; } #skip_nav a:focus, #skip_nav a:active { top: 1px; z-index: 99999; display: block; width: 100%; height: 40px; line-height: 40px; font-weight: bold; color: #fff; text-align: center; background-color: #261601; }
-/* Header */ #header { z-index: 10; position: relative; min-width: 1286px; } #header .shop-wrap { height: 31px; background: url('../img/inc/head_top_bg.png') repeat; } #header .head { height: 76px; background-color: #ffffff; background: url('../img/inc/head_bot_bg.png') no-repeat center center; background-size: cover; border-bottom: 1px solid #c9c9c9; } #header .container { width: 1190px; height: 100%; margin: 0 auto; } #header .container.shop { text-align: right; line-height: 31px; height: 31px; box-sizing: border-box; } #header .container.shop a { display: inline-block; width: 130px; } #header .container.shop a img { vertical-align: middle; } #header .head .logo img { padding-top: 16px; } #header .head .gnb { overflow: hidden; padding-top: 25px; float: left; margin-left: 40px; } #header .head .gnb li { float: left; margin-top: 4px; padding: 0 24px; position: relative; height: 17px; overflow: hidden; } #header .head .gnb li a { position: relative; display: inline-block; line-height: 17px; } #header .head .gnb li:hover a, #header .head .gnb li.active a { top: -17px; } #header .head .all { display: inline-block; } #header .head .expend { float: right; margin-top: 15px; overflow: hidden; height: 42px; } #header .head .expend a { display: inline-block; margin-left: 5px; position: relative; } #header .head .expend a:hover { top: -42px; } #header .head .expend a:first-child:before { display: none; } #header .container:after { clear: both; content: ''; display: block; }
-/* Catalogue */ #catalogue { width: 1286px; height: 826px; margin: 0 auto; position: relative; } #catalogue .contents-wrap { position: relative; width: 1286px; height: 826px; overflow: hidden; } #catalogue .contents { position: absolute; top: 0; left: 0; width: 1286px; height: 826px; } #catalogue .backgrounds { position: absolute; top: 0; left: 0; }
-/* background */ #catalogue .contents .bg { position: absolute; top: 0; left: 0; width: 1286px; height: 826px; object-fit: cover; display: block; pointer-events: none; z-index: 0; max-width: none; }
-/* list */ #catalogue .contents .list { position: relative; width: 1286px; height: 826px; z-index: 1; } #catalogue .contents .list > a { position: absolute; }
-/* control */ #catalogue .arrow { position: absolute; top: 50%; margin-top: -40px; z-index: 10; opacity: 0; } #catalogue .arrow.prev { left: 75px; } #catalogue .arrow.next { right: 75px; } #catalogue .arrow.prev.single { left: 360px !important; } #catalogue .arrow.next.single { right: 360px !important; }
-/* detail */ .popup { position: absolute; width: 100%; min-width: 1286px; height: 100%; z-index: 50; top: 0; left: 0; } .popup .overlay { position: absolute; inset: 0; opacity: 0.5; z-index: -1; background: #000; filter: alpha(opacity=50); } .detail { position: relative; width: 1190px; height: 731px; margin: 0 auto; top: 150px; } .detail .contents { width: 100%; } .detail .close { position: absolute; right: 44px; top: 13px; } .detail .view { font-size: 14px; color: #391b00; font-weight: 200; } .detail .buy { position: absolute; right: 174px; top: 25px; } .detail .buy:after { clear: both; content: ''; display: block; position: absolute; right: -12px; width: 1px; height: 13px; background: #c7a78a; top: 3px; }
-/* footer */ #footer.copy { min-width: 1286px; text-align: center; padding-bottom: 46px; }
-/* page 3 */ .page3 .prd1 { left: 200px; top: 145px; } .page3 .prd2 { left: 200px; top: 450px; } .page3 .prd3 { right: 200px; top: 180px; } .page3 .prd4 { right: 340px; top: 490px; } .page3 .prd5 { right: 110px; top: 490px; }
-/* page 4 */ .page4 .prd6 { left: 200px; top: 126px; } .page4 .prd7 { left: 134px; top: 490px; } .page4 .prd8 { left: 386px; top: 489px; } .page4 .prd9 { right: 176px; top: 150px; } .page4 .prd10 { right: 142px; top: 445px; }
-/* page5 */ .page5 .prd11 { left: 180px; top: 145px; } .page5 .prd12 { left: 200px; top: 450px; } .page5 .prd13 { right: 200px; top: 145px; } .page5 .prd14 { right: 180px; top: 450px; }
-/* page6 */ .page6 .prd1 { right: 370px; top: 130px; } .page6 .prd2 { right: 110px; top: 130px; } .page6 .prd3 { right: 370px; top: 468px; } .page6 .prd4 { right: 110px; top: 468px; }
-/* page7 */ .page7 .prd1 { right: 370px; top: 130px; } .page7 .prd2 { right: 110px; top: 130px; } .page7 .prd3 { right: 370px; top: 468px; } .page7 .prd4 { right: 110px; top: 468px; }
-/* page8 */ .page8 .prd1 { right: 200px; top: 140px; } .page8 .prd2 { right: 340px; top: 490px; } .page8 .prd3 { right: 110px; top: 490px; }
-/* page9 */ .page9 .prd1 { right: 170px; top: 160px; } .page9 .prd2 { right: 360px; top: 460px; } .page9 .prd3 { right: 120px; top: 460px; }
-/* page10 */ .page10 .prd1 { right: 440px; top: 120px; } .page10 .prd2 { right: 280px; top: 120px; } .page10 .prd3 { right: 110px; top: 120px; } .page10 .prd4 { right: 440px; top: 330px; } .page10 .prd5 { right: 280px; top: 330px; } .page10 .prd6 { right: 110px; top: 330px; } .page10 .prd7 { right: 440px; top: 550px; } .page10 .prd8 { right: 280px; top: 550px; } .page10 .prd9 { right: 110px; top: 550px; }
-/* page11 */ .page11 .prd1 { right: 210px; top: 120px; } .page11 .prd2 { right: 360px; top: 370px; } .page11 .prd3 { right: 110px; top: 370px; } .page11 .prd4 { right: 360px; top: 576px; } .page11 .prd5 { right: 110px; top: 576px; }
-/* page12 */ .page12 .prd1 { right: 186px; top: 140px; } .page12 .prd2 { right: 360px; top: 460px; } .page12 .prd3 { right: 110px; top: 460px; }
+@charset "utf-8";
+@import url(default.css);
 
-/* ===== Preview(미리보기) – 공용과 동일 ===== */
-.popup .preview{
-  width:1190px;height:731px;border:5px solid #371333;border-radius:10px;
-  background:#fff;top:150px;margin:0 auto;position:relative;box-sizing:border-box
+/* ======================
+   Utilities
+====================== */
+.left {
+  float: left;
 }
-.popup .preview .head { position:relative; }
-.popup .preview .head .close { position:absolute; right:14px; top:8px; background:transparent; border:0; padding:0; line-height:0; cursor:pointer; }
-.popup .preview { position: relative !important; z-index: 1 !important; width: 1190px !important; height: 731px !important; margin: 80px auto 0 !important; border: 5px solid #40220f !important; border-radius: 10px !important; background: #fff !important; box-sizing: border-box !important; }
-.popup .preview .head { position: relative !important; display: flex !important; align-items: center !important; justify-content: flex-start !important; height: 40px !important; padding: 0 44px 5px !important; background: #40220f !important; box-sizing: border-box !important; overflow: hidden !important; }
-.popup .preview .cont_all { position: absolute !important; left: 0; right: 0; top: 100px !important; bottom: 0; padding: 18px 28px !important; box-sizing: border-box !important; overflow: hidden !important; }
-.popup .preview .cont { margin: 0 auto !important; width: auto !important; max-width: none !important; display: grid !important; grid-template-columns: repeat(5, 204px) !important; grid-template-rows: repeat(3, 150px) !important; gap: 16px !important; justify-content: center !important; align-content: center !important; }
-.popup .preview .cont li { position: relative !important; list-style: none !important; width: auto !important; height: auto !important; min-width: 0 !important; min-height: 0 !important; overflow: hidden !important; }
-.popup .preview .cont li a { position: relative !important; inset: auto !important; display: block !important; width: 100% !important; height: 100% !important; transform: none !important; top: auto !important; right: auto !important; }
-.popup .preview .cont li a:hover { transform:none !important; }
-.popup .preview .cont li a br { display:none !important; }
-.popup .preview .cont li a img { position: absolute !important; inset: 0 !important; display: block !important; width: 100% !important; height: 100% !important; object-fit: contain !important; object-position: center center !important; transition: opacity .15s linear; }
+
+.right {
+  float: right;
+}
+
+/* ======================
+   Loading
+====================== */
+.loading {
+  display: none !important;
+}
+
+.loading .overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.loading .gif {
+  display: none !important;
+}
+
+/* ======================
+   Layout base
+====================== */
+#wrap {
+  position: relative;
+  background: #ffffff;
+}
+
+#skip_nav a {
+  position: absolute;
+  top: -500px;
+}
+
+#skip_nav a:focus,
+#skip_nav a:active {
+  top: 1px;
+  z-index: 99999;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: #261601;
+}
+
+/* ======================
+   Header
+====================== */
+#header {
+  position: relative;
+  z-index: 10;
+  min-width: 1286px;
+}
+
+#header .shop-wrap {
+  height: 31px;
+  background: url("../img/inc/head_top_bg.png") repeat;
+}
+
+#header .head {
+  height: 76px;
+  background-color: #ffffff;
+  background: url("../img/inc/head_bot_bg.png") no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+#header .container {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header .container.shop {
+  height: 31px;
+  line-height: 31px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+#header .container.shop a {
+  display: inline-block;
+  width: 130px;
+}
+
+#header .container.shop a img {
+  vertical-align: middle;
+}
+
+#header .head .logo img {
+  padding-top: 16px;
+}
+
+#header .head .gnb {
+  float: left;
+  overflow: hidden;
+  padding-top: 25px;
+  margin-left: 40px;
+}
+
+#header .head .gnb li {
+  float: left;
+  position: relative;
+  height: 17px;
+  margin-top: 4px;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+#header .head .gnb li a {
+  position: relative;
+  display: inline-block;
+  line-height: 17px;
+}
+
+#header .head .gnb li:hover a,
+#header .head .gnb li.active a {
+  top: -17px;
+}
+
+#header .head .all {
+  display: inline-block;
+}
+
+#header .head .expend {
+  float: right;
+  margin-top: 15px;
+  height: 42px;
+  overflow: hidden;
+}
+
+#header .head .expend a {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#header .head .expend a:hover {
+  top: -42px;
+}
+
+#header .head .expend a:first-child:before {
+  display: none;
+}
+
+#header .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ======================
+   Catalogue
+====================== */
+#catalogue {
+  position: relative;
+  width: 1286px;
+  height: 826px;
+  margin: 0 auto;
+}
+
+#catalogue .contents-wrap {
+  position: relative;
+  width: 1286px;
+  height: 826px;
+  overflow: hidden;
+}
+
+#catalogue .contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1286px;
+  height: 826px;
+}
+
+#catalogue .backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* background */
+#catalogue .contents .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1286px;
+  height: 826px;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+  max-width: none;
+}
+
+/* list */
+#catalogue .contents .list {
+  position: relative;
+  width: 1286px;
+  height: 826px;
+  z-index: 1;
+}
+
+#catalogue .contents .list > a {
+  position: absolute;
+}
+
+/* control */
+#catalogue .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  z-index: 10;
+  opacity: 0;
+}
+
+#catalogue .arrow.prev {
+  left: 75px;
+}
+
+#catalogue .arrow.next {
+  right: 75px;
+}
+
+#catalogue .arrow.prev.single {
+  left: 360px !important;
+}
+
+#catalogue .arrow.next.single {
+  right: 360px !important;
+}
+
+/* ======================
+   Detail / Popup
+====================== */
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  min-width: 1286px;
+  height: 100%;
+}
+
+.popup .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.detail {
+  position: relative;
+  top: 150px;
+  width: 1190px;
+  height: 731px;
+  margin: 0 auto;
+}
+
+.detail .contents {
+  width: 100%;
+}
+
+.detail .close {
+  position: absolute;
+  right: 44px;
+  top: 13px;
+}
+
+.detail .view {
+  font-size: 14px;
+  font-weight: 200;
+  color: #391b00;
+}
+
+.detail .buy {
+  position: absolute;
+  right: 174px;
+  top: 25px;
+}
+
+.detail .buy:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -12px;
+  width: 1px;
+  height: 13px;
+  background: #c7a78a;
+}
+
+/* ======================
+   Footer
+====================== */
+#footer.copy {
+  min-width: 1286px;
+  text-align: center;
+  padding-bottom: 46px;
+}
+
+/* ======================
+   Page Positions
+====================== */
+/* page3 */
+.page3 .prd1 { right: 340x; top: 180px; }
+.page3 .prd2 { right: 110px; top: 490px; }
+.page3 .prd3 { right: 340px; top: 490px; }
+.page3 .prd4 { right: 110px; top: 490px; }
+
+/* page4 */
+.page4 .prd1  { left: 134px; top: 126px; }
+.page4 .prd2  { left: 200px; top: 490px; }
+.page4 .prd3  { right: 176px; top: 126px; }
+.page4 .prd4 { right: 142px; top: 490px; }
+
+/* page5 */
+.page5 .prd11 { left: 180px; top: 145px; }
+.page5 .prd12 { left: 200px; top: 450px; }
+.page5 .prd13 { right: 200px; top: 145px; }
+.page5 .prd14 { right: 180px; top: 450px; }
+
+/* page6 */
+.page6 .prd1 { right: 370px; top: 130px; }
+.page6 .prd2 { right: 110px; top: 130px; }
+.page6 .prd3 { right: 370px; top: 468px; }
+.page6 .prd4 { right: 110px; top: 468px; }
+
+/* page7 */
+.page7 .prd1 { right: 370px; top: 130px; }
+.page7 .prd2 { right: 110px; top: 130px; }
+.page7 .prd3 { right: 370px; top: 468px; }
+.page7 .prd4 { right: 110px; top: 468px; }
+
+/* page8 */
+.page8 .prd1 { right: 200px; top: 140px; }
+.page8 .prd2 { right: 340px; top: 490px; }
+.page8 .prd3 { right: 110px; top: 490px; }
+
+/* page9 */
+.page9 .prd1 { right: 170px; top: 160px; }
+.page9 .prd2 { right: 360px; top: 460px; }
+.page9 .prd3 { right: 120px; top: 460px; }
+
+/* page10 */
+.page10 .prd1 { right: 440px; top: 120px; }
+.page10 .prd2 { right: 280px; top: 120px; }
+.page10 .prd3 { right: 110px; top: 120px; }
+.page10 .prd4 { right: 440px; top: 330px; }
+.page10 .prd5 { right: 280px; top: 330px; }
+.page10 .prd6 { right: 110px; top: 330px; }
+.page10 .prd7 { right: 440px; top: 550px; }
+.page10 .prd8 { right: 280px; top: 550px; }
+.page10 .prd9 { right: 110px; top: 550px; }
+
+/* page11 */
+.page11 .prd1 { right: 210px; top: 120px; }
+.page11 .prd2 { right: 360px; top: 370px; }
+.page11 .prd3 { right: 110px; top: 370px; }
+.page11 .prd4 { right: 360px; top: 576px; }
+.page11 .prd5 { right: 110px; top: 576px; }
+
+/* page12 */
+.page12 .prd1 { right: 186px; top: 140px; }
+.page12 .prd2 { right: 360px; top: 460px; }
+.page12 .prd3 { right: 110px; top: 460px; }
+
+/* ======================
+   Preview (공용)
+====================== */
+.popup .preview {
+  position: relative !important;
+  z-index: 1 !important;
+  width: 1190px !important;
+  height: 731px !important;
+  margin: 80px auto 0 !important;
+  border: 5px solid #40220f !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  box-sizing: border-box !important;
+}
+
+.popup .preview .head {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  height: 40px !important;
+  padding: 0 44px 5px !important;
+  background: #40220f !important;
+  overflow: hidden !important;
+}
+
+.popup .preview .head .close {
+  position: absolute;
+  right: 14px;
+  top: 8px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.popup .preview .cont_all {
+  position: absolute !important;
+  top: 100px !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 28px !important;
+  overflow: hidden !important;
+}
+
+.popup .preview .cont {
+  display: grid !important;
+  grid-template-columns: repeat(5, 204px) !important;
+  grid-template-rows: repeat(3, 150px) !important;
+  gap: 18px !important;
+  justify-content: center !important;
+  align-content: center !important;
+}
+
+.popup .preview .cont li {
+  list-style: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.popup .preview .cont li a {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.popup .preview .cont li a img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  transition: opacity 0.15s linear;
+}
+
 .popup .preview .cont li a img:nth-of-type(1) { opacity: 1 !important; }
 .popup .preview .cont li a img:nth-of-type(2) { opacity: 0 !important; }
 .popup .preview .cont li a:hover img:nth-of-type(1) { opacity: 0 !important; }
 .popup .preview .cont li a:hover img:nth-of-type(2) { opacity: 1 !important; }
 
-/* ===== 잔상/블렌딩 방지 ===== */
-#catalogue .contents, #catalogue .contents .bg, #catalogue .contents .list, #catalogue .contents .list > a, #catalogue .contents .list img { will-change: transform, opacity; -webkit-transform: translateZ(0); transform: translateZ(0); backface-visibility: hidden; }
-#catalogue .contents { isolation: isolate; contain: paint; }
-#catalogue .contents .bg { image-rendering: auto; }
+/* ======================
+   Rendering / Hotfix
+====================== */
+#catalogue .contents,
+#catalogue .contents .bg,
+#catalogue .contents .list,
+#catalogue .contents .list > a,
+#catalogue .contents .list img {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
 
-/* HOTFIX: 첫 페이지 즉시 표시(현재 흐름 유지) */ #catalogue .contents { opacity:1 !important; visibility:visible !important; pointer-events:auto !important; } #catalogue .contents .list { display:block !important; }
+#catalogue .contents {
+  isolation: isolate;
+  contain: paint;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
 
-/* HEADER 재정렬(로고 ● 기업고객용 ● GNB ● 우측아이콘) */ #header .head .container { display: flow-root; position: relative; } #header .head .logo { float: left; } #header .head .special-mark { float: left; padding-top: 20px; margin-left: 16px; } #header .head .special-mark img { display: block; } #header .head .gnb { float: left; padding-top: 25px; margin-left: 50px; } #header .head .expend { float: right; margin-top: 15px; height: 42px; overflow: hidden; }
+#catalogue .contents .list {
+  display: block !important;
+}
 
-/* === Preview 썸네일 크게(공용 카탈로그) === */
-.popup .preview .cont{margin:0 auto !important;width:auto !important;max-width:none !important;display:grid !important;grid-template-columns:repeat(5,204px) !important;grid-template-rows:repeat(3,150px) !important;gap:18px !important;justify-content:center !important;align-content:center !important;}
+/* ======================
+   Header Reorder
+====================== */
+#header .head .container {
+  display: flow-root;
+  position: relative;
+}
 
+#header .head .logo {
+  float: left;
+}
+
+#header .head .special-mark {
+  float: left;
+  padding-top: 20px;
+  margin-left: 16px;
+}
+
+#header .head .special-mark img {
+  display: block;
+}
