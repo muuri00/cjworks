@@ -12,6 +12,23 @@ a:hover,a:focus { color:#f1c244; }
 
 .skip { font-size:0; overflow:hidden; width:0; height:0; }
 body { font:12px/1.4 "Nanum Gothic", NanumGothic, "돋움", "Dotum", sans-serif; color:#777; background:#fff; }
+body.cate2 .contents.page #mainslide .w43{
+  width: 49% !important;
+}
+body.cate2 .contents.page .tc.two-col{
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+body.cate2 .contents.page .tc.two-col > a{
+  flex: 0 0 49%;
+  max-width: 49%;
+}
+
+body.cate2 .contents.page .tc.two-col > a.w43{
+  width: auto !important;
+}
 #skipnavi { width:0; height:0; font-size:0; position:absolute; left:-9999px; }
 
 .left { float:left; }
